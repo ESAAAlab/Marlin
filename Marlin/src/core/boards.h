@@ -271,6 +271,7 @@
 #define BOARD_ARCHIM2                 3024  // UltiMachine Archim2 (with TMC2130 drivers)
 #define BOARD_ALLIGATOR               3025  // Alligator Board R2
 #define BOARD_CNCONTROLS_15D          3026  // Cartesio CN Controls V15 on DUE
+#define BOARD_WASP2040_31             3027  // Wasp 2040 on DUE
 
 //
 // SAM3X8C ARM Cortex M3

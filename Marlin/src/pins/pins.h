@@ -486,6 +486,8 @@
   #include "sam/pins_PRINTRBOARD_G2.h"          // SAM3X8C                                env:DUE_USB
 #elif MB(CNCONTROLS_15D)
   #include "sam/pins_CNCONTROLS_15D.h"          // SAM3X8E                                env:DUE env:DUE_USB
+#elif MB(WASP2040_31)
+  #include "sam/pins_WASP2040_31.h"             // SAM3X8E                                env:DUE env:DUE_debug
 
 //
 // STM32 ARM Cortex-M0
