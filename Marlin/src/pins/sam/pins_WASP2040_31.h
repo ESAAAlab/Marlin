@@ -140,7 +140,7 @@
 //
 // LCD / Controller
 //
-#if ENABLED(ULTRA_LCD)
+#if ENABLED(REPRAP_DISCOUNT_SMART_CONTROLLER)
   #define BEEPER_PIN                            18  // OK
   #define BTN_EN1                               40  // OK
   #define BTN_EN2                               42  // OK
