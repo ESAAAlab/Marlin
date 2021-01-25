@@ -83,6 +83,15 @@
 // #define E2_DIR_PIN                            46  // OK
 // #define E2_ENABLE_PIN                         23  // CANTX OK
 
+#define MOTOR_CURRENT_PWM_XY_PIN              8
+#define MOTOR_CURRENT_PWM_Z_PIN               8
+#define MOTOR_CURRENT_PWM_E_PIN               8
+// Motor current PWM conversion, PWM value = MotorCurrentSetting * 255 / range
+#ifndef MOTOR_CURRENT_PWM_RANGE
+  #define MOTOR_CURRENT_PWM_RANGE            2000
+#endif
+#define DEFAULT_PWM_MOTOR_CURRENT  { 1300, 1300, 1250}
+
 //
 // Temperature Sensors
 //
@@ -123,14 +132,15 @@
   #define SCK_PIN                               76 // OK
   #define MISO_PIN                              74 // OK
   #define MOSI_PIN                              75 // OK
-  #define SDSS                                  53  // OK ?
   #define SD_DETECT_PIN                         38  // OK
 #endif // SDSUPPORT
+
+#define SDSS                                  53  // OK ?
 
 //
 // LCD / Controller
 //
-#if ENABLED(ULTRA_LCD)
+#if ENABLED(REPRAP_DISCOUNT_SMART_CONTROLLER)
   #define BEEPER_PIN                            18  // OK
   #define BTN_EN1                               40  // OK
   #define BTN_EN2                               42  // OK
