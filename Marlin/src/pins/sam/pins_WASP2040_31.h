@@ -110,9 +110,12 @@
 // #define HEATER_3_PIN                           
 #define HEATER_BED_PIN                         4  // OK
 
-#ifndef FAN_PIN
-  #define FAN_PIN                              7  // AUX1
-#endif
+#undef E0_AUTO_FAN_PIN
+#define E0_AUTO_FAN_PIN                        7  // OK
+
+// #ifndef FAN_PIN
+//   #define FAN_PIN                              7  // AUX1
+// #endif
 // #define FAN2_PIN                               77  // AUX2 / DAC1 UNPOPULATED
 // #define FAN3_PIN                               24  // AUX3 / CANRX UNPOPULATED
 
